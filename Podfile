@@ -19,8 +19,8 @@ target 'ExpenseTracker' do
   end
 end
 
-post_install do |installer|
-  installer.pods_projects.targets.each do |target|
-    puts target.name
-  end
-end
+#post_install do |installer|
+#  installer.pods_projects.targets.each do |target|
+#    puts target.name
+#  end
+#end
