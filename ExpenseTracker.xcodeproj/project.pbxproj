@@ -20,6 +20,8 @@
 		52F3D2792BD8A63600BA2ED2 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D2782BD8A63600BA2ED2 /* TransactionModel.swift */; };
 		52F3D27B2BD8A79F00BA2ED2 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D27A2BD8A79F00BA2ED2 /* PreviewData.swift */; };
 		52F3D27D2BD8A8E600BA2ED2 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D27C2BD8A8E600BA2ED2 /* TransactionRow.swift */; };
+		52F8B1E92BDB32B600D6744F /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8B1E82BDB32B600D6744F /* TransactionListViewModel.swift */; };
+		52F8B1EB2BDB394400D6744F /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8B1EA2BDB394300D6744F /* RecentTransactionList.swift */; };
 		B4D30ABB0FA5A0D36509F157 /* Pods_ExpenseTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3E107274A7A962DB7FC96C /* Pods_ExpenseTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		52F3D2782BD8A63600BA2ED2 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		52F3D27A2BD8A79F00BA2ED2 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		52F3D27C2BD8A8E600BA2ED2 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		52F8B1E82BDB32B600D6744F /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		52F8B1EA2BDB394300D6744F /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 		C2377DB7C82F29BBCA98753E /* Pods-ExpenseTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseTrackerTests/Pods-ExpenseTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8E4750D84BC051DABE2C2AF /* Pods-ExpenseTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker.release.xcconfig"; path = "Target Support Files/Pods-ExpenseTracker/Pods-ExpenseTracker.release.xcconfig"; sourceTree = "<group>"; };
 		DE87FFCA1948BA7C1BCCF1E9 /* Pods-ExpenseTracker-ExpenseTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker-ExpenseTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-ExpenseTracker-ExpenseTrackerUITests/Pods-ExpenseTracker-ExpenseTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				52F3D24C2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift */,
 				52F3D24E2BD8A00600BA2ED2 /* ContentView.swift */,
 				52F3D27C2BD8A8E600BA2ED2 /* TransactionRow.swift */,
+				52F8B1E82BDB32B600D6744F /* TransactionListViewModel.swift */,
+				52F8B1EA2BDB394300D6744F /* RecentTransactionList.swift */,
 				52F3D2502BD8A00B00BA2ED2 /* Assets.xcassets */,
 				52F3D2522BD8A00B00BA2ED2 /* Preview Content */,
 				52F3D2762BD8A24200BA2ED2 /* Extensions.swift */,
@@ -418,10 +424,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F3D27B2BD8A79F00BA2ED2 /* PreviewData.swift in Sources */,
+				52F8B1EB2BDB394400D6744F /* RecentTransactionList.swift in Sources */,
 				52F3D2792BD8A63600BA2ED2 /* TransactionModel.swift in Sources */,
 				52F3D24F2BD8A00600BA2ED2 /* ContentView.swift in Sources */,
 				52F3D27D2BD8A8E600BA2ED2 /* TransactionRow.swift in Sources */,
 				52F3D2772BD8A24200BA2ED2 /* Extensions.swift in Sources */,
+				52F8B1E92BDB32B600D6744F /* TransactionListViewModel.swift in Sources */,
 				52F3D24D2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
