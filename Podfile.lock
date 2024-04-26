@@ -1,0 +1,16 @@
+PODS:
+  - SwiftUIFontIcon (2.1.0)
+
+DEPENDENCIES:
+  - SwiftUIFontIcon
+
+SPEC REPOS:
+  trunk:
+    - SwiftUIFontIcon
+
+SPEC CHECKSUMS:
+  SwiftUIFontIcon: f2b3b55c3cb04255ad3ac11584481f950c3976ad
+
+PODFILE CHECKSUM: a4af8d7fddc1811cb1f444d66289f0cb76610081
+
+COCOAPODS: 1.15.2
