@@ -17,10 +17,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v1
 
-    - name: Set Gems
+    - name: Set Cocoapods
       run: |
-        gem install bundler
-        bundle install
+        gem install cocoapods -v 1.15.2
+        pod install --repo-update
 
     - name: Set Xcode version
       uses: maxim-lobanov/setup-xcode@v1.1
@@ -56,10 +56,10 @@ jobs:
       with:
         name: build
 
-    - name: Set Gems
+    - name: Set Cocoapods
       run: |
-        gem install bundler
-        bundle install
+        gem install cocoapods -v 1.15.2
+        pod install --repo-update
 
     - name: Set Xcode version
       uses: maxim-lobanov/setup-xcode@v1.1
