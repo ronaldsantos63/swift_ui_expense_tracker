@@ -1,5 +1,5 @@
 coverage_service: cobertura_xml
-xcodeproj: ExpenseTracker.xcworkspace
+xcodeproj: ExpenseTracker.xcodeproj
 input_format: profdata
 output_directory: Coverage/
 build_directory: build/Build/
