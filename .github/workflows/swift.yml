@@ -30,7 +30,8 @@ jobs:
     - name: Build
       run: |
         set -o pipefail
-        xcodebuild build \
+        slather setup
+        xcodebuild build-for-testing \
         -scheme ExpenseTracker \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
         -derivedDataPath build \
@@ -68,9 +69,20 @@ jobs:
     - name: Test
       run: |
         set -o pipefail
-        xcodebuild test \
+        xcodebuild test-without-building \
         -scheme ExpenseTracker \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
-        derivedDataPath build \
+        -derivedDataPath build \
+        -enableCodeCoverage YES \
         | xcpretty
+
+    - name: Coverage report
+      run: slather coverage -x --binary-basename 'ExpenseTracker'
+
+    - name: Post coverage
+      uses: codecov/codecov-action@v1
+      with:
+        token: #{{ secrets.CODECOV_TOKEN }}
+        file: ./Coverage/cobertura.xml
+        fail_ci_if_error: true
 
