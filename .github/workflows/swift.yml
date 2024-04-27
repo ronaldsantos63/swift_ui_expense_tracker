@@ -36,7 +36,7 @@ jobs:
         set -o pipefail
         slather setup
         xcodebuild build-for-testing \
-        -workspace ExpenseTracker.xcworkspace
+        -workspace ExpenseTracker.xcworkspace \
         -scheme ExpenseTrackerQA \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
         -derivedDataPath build \
@@ -78,7 +78,7 @@ jobs:
       run: |
         set -o pipefail
         xcodebuild test-without-building \
-        -workspace ExpenseTracker.xcworkspace
+        -workspace ExpenseTracker.xcworkspace \
         -scheme ExpenseTrackerQA \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
         -derivedDataPath build \
