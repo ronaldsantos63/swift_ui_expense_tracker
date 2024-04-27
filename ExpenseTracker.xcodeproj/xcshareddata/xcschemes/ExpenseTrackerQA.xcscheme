@@ -30,6 +30,26 @@
       codeCoverageEnabled = "YES"
       localizableStringsDataGatheringEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "52F3D2582BD8A00B00BA2ED2"
+               BuildableName = "ExpenseTrackerTests.xctest"
+               BlueprintName = "ExpenseTrackerTests"
+               ReferencedContainer = "container:ExpenseTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "52F3D2622BD8A00B00BA2ED2"
+               BuildableName = "ExpenseTrackerUITests.xctest"
+               BlueprintName = "ExpenseTrackerUITests"
+               ReferencedContainer = "container:ExpenseTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
