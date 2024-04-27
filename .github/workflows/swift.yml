@@ -38,7 +38,7 @@ jobs:
         xcodebuild build-for-testing \
         -workspace ExpenseTracker.xcworkspace \
         -scheme ExpenseTrackerQA \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        -destination 'platform=iOS Simulator,name=iPhone 14 Pro' \
         -derivedDataPath build \
         | xcpretty
 
@@ -80,7 +80,7 @@ jobs:
         xcodebuild test-without-building \
         -workspace ExpenseTracker.xcworkspace \
         -scheme ExpenseTrackerQA \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        -destination 'platform=iOS Simulator,name=iPhone 14 Pro' \
         -derivedDataPath build \
         -enableCodeCoverage YES \
         | xcpretty
