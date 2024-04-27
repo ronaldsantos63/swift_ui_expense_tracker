@@ -13,6 +13,7 @@
 		5266380D2BDD67D8008741B0 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5266380C2BDD67D8008741B0 /* Collections */; };
 		5266380F2BDD67D8008741B0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5266380E2BDD67D8008741B0 /* DequeModule */; };
 		526638112BDD67D8008741B0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 526638102BDD67D8008741B0 /* OrderedCollections */; };
+		526638142BDD6B7A008741B0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 526638132BDD6B7A008741B0 /* SwiftUICharts */; };
 		52F3D24D2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D24C2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift */; };
 		52F3D24F2BD8A00600BA2ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D24E2BD8A00600BA2ED2 /* ContentView.swift */; };
 		52F3D2512BD8A00B00BA2ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3D2502BD8A00B00BA2ED2 /* Assets.xcassets */; };
@@ -103,6 +104,7 @@
 				B4D30ABB0FA5A0D36509F157 /* Pods_ExpenseTracker.framework in Frameworks */,
 				526638112BDD67D8008741B0 /* OrderedCollections in Frameworks */,
 				5266380F2BDD67D8008741B0 /* DequeModule in Frameworks */,
+				526638142BDD6B7A008741B0 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +256,7 @@
 				5266380C2BDD67D8008741B0 /* Collections */,
 				5266380E2BDD67D8008741B0 /* DequeModule */,
 				526638102BDD67D8008741B0 /* OrderedCollections */,
+				526638132BDD6B7A008741B0 /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = 52F3D2492BD8A00600BA2ED2 /* ExpenseTracker.app */;
@@ -332,6 +335,7 @@
 			mainGroup = 52F3D2402BD8A00600BA2ED2;
 			packageReferences = (
 				5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				526638122BDD6B7A008741B0 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 52F3D24A2BD8A00600BA2ED2 /* Products */;
 			projectDirPath = "";
@@ -1665,6 +1669,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		526638122BDD6B7A008741B0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1682,6 +1694,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		526638132BDD6B7A008741B0 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 526638122BDD6B7A008741B0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

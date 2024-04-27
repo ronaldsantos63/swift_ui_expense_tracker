@@ -90,9 +90,8 @@ jobs:
       run: slather coverage -x --binary-basename 'ExpenseTracker'
 
     - name: Post coverage
-      uses: codecov/codecov-action@v1
-      with:
-        token: #{{ secrets.CODECOV_TOKEN }}
-        file: ./Coverage/cobertura.xml
-        fail_ci_if_error: true
+      run: |
+        curl -Os https://cli.codecov.io/latest/macos/codecov
+        chmod +x codecov
+        ./codecov --verbose upload-process --fail-on-error -t ${{ secrets.CODECOV_TOKEN }} -n 'ExpenseTracker'-${{ github.run_id }} -F ExpenseTracker -f ./Coverage/cobertura.xml
 
