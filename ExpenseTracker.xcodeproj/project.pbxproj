@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B714DD873079AE0D4650ABB /* Pods_ExpenseTracker_ExpenseTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4375EFAABF23247BC6E46C9E /* Pods_ExpenseTracker_ExpenseTrackerUITests.framework */; };
 		4FCEF4260433025597E9E262 /* Pods_ExpenseTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADDFB854F89D35D25477F3A /* Pods_ExpenseTrackerTests.framework */; };
+		5266380A2BDD59A9008741B0 /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526638092BDD59A9008741B0 /* TransactionList.swift */; };
+		5266380D2BDD67D8008741B0 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5266380C2BDD67D8008741B0 /* Collections */; };
+		5266380F2BDD67D8008741B0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5266380E2BDD67D8008741B0 /* DequeModule */; };
+		526638112BDD67D8008741B0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 526638102BDD67D8008741B0 /* OrderedCollections */; };
 		52F3D24D2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D24C2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift */; };
 		52F3D24F2BD8A00600BA2ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D24E2BD8A00600BA2ED2 /* ContentView.swift */; };
 		52F3D2512BD8A00B00BA2ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3D2502BD8A00B00BA2ED2 /* Assets.xcassets */; };
@@ -54,6 +58,7 @@
 		3FB833EDBA800CDAFF9C405A /* Pods-ExpenseTracker.releasedev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker.releasedev.xcconfig"; path = "Target Support Files/Pods-ExpenseTracker/Pods-ExpenseTracker.releasedev.xcconfig"; sourceTree = "<group>"; };
 		4375EFAABF23247BC6E46C9E /* Pods_ExpenseTracker_ExpenseTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseTracker_ExpenseTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526638082BDD2EAB008741B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		526638092BDD59A9008741B0 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		52F3D2492BD8A00600BA2ED2 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3D24C2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		52F3D24E2BD8A00600BA2ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +99,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5266380D2BDD67D8008741B0 /* Collections in Frameworks */,
 				B4D30ABB0FA5A0D36509F157 /* Pods_ExpenseTracker.framework in Frameworks */,
+				526638112BDD67D8008741B0 /* OrderedCollections in Frameworks */,
+				5266380F2BDD67D8008741B0 /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,7 @@
 				52F3D24C2BD8A00600BA2ED2 /* ExpenseTrackerApp.swift */,
 				52F3D24E2BD8A00600BA2ED2 /* ContentView.swift */,
 				52F3D27C2BD8A8E600BA2ED2 /* TransactionRow.swift */,
+				526638092BDD59A9008741B0 /* TransactionList.swift */,
 				52F8B1E82BDB32B600D6744F /* TransactionListViewModel.swift */,
 				52F8B1EA2BDB394300D6744F /* RecentTransactionList.swift */,
 				52F3D2502BD8A00B00BA2ED2 /* Assets.xcassets */,
@@ -241,6 +250,11 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				5266380C2BDD67D8008741B0 /* Collections */,
+				5266380E2BDD67D8008741B0 /* DequeModule */,
+				526638102BDD67D8008741B0 /* OrderedCollections */,
+			);
 			productName = ExpenseTracker;
 			productReference = 52F3D2492BD8A00600BA2ED2 /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -316,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 52F3D2402BD8A00600BA2ED2;
+			packageReferences = (
+				5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 52F3D24A2BD8A00600BA2ED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F3D27B2BD8A79F00BA2ED2 /* PreviewData.swift in Sources */,
+				5266380A2BDD59A9008741B0 /* TransactionList.swift in Sources */,
 				52F8B1EB2BDB394400D6744F /* RecentTransactionList.swift in Sources */,
 				52F3D2792BD8A63600BA2ED2 /* TransactionModel.swift in Sources */,
 				52F3D24F2BD8A00600BA2ED2 /* ContentView.swift in Sources */,
@@ -1637,6 +1655,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5266380C2BDD67D8008741B0 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		5266380E2BDD67D8008741B0 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		526638102BDD67D8008741B0 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266380B2BDD67D8008741B0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52F3D2412BD8A00600BA2ED2 /* Project object */;
 }

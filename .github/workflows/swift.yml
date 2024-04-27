@@ -64,7 +64,7 @@ jobs:
     - name: Set Cocoapods And Slather
       run: |
         gem install cocoapods -v 1.15.2
-        gem install Slather
+        gem install slather
 
     - name: Set Xcode version
       uses: maxim-lobanov/setup-xcode@v1.1
