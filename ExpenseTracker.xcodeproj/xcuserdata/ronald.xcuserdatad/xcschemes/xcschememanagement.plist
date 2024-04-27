@@ -6,8 +6,43 @@
 	<dict>
 		<key>ExpenseTracker.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ExpenseTrackerDev.xcscheme</key>
+		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>ExpenseTrackerProd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>ExpenseTrackerQA.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>52F3D2482BD8A00600BA2ED2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52F3D2582BD8A00B00BA2ED2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52F3D2622BD8A00B00BA2ED2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

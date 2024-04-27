@@ -1,9 +1,10 @@
 coverage_service: cobertura_xml
 xcodeproj: ExpenseTracker.xcodeproj
+workspace: ExpenseTracker.xcworkspace
 input_format: profdata
 output_directory: Coverage/
 build_directory: build/Build/
-scheme: ExpenseTracker
+scheme: ExpenseTrackerQA
 ignore:
   - ExpenseTrackerTests/*
   - ExpenseTrackerUITests/*
