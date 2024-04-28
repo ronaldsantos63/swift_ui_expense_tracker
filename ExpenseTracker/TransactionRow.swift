@@ -28,7 +28,7 @@ struct TransactionRow: View {
                     .lineLimit(1)
                 
                 // MARK: Transaction Category
-                Text(transactionModel.category)
+                Text(transactionModel.categoryItem.name)
                     .font(.footnote)
                     .opacity(0.7)
                     .lineLimit(1)

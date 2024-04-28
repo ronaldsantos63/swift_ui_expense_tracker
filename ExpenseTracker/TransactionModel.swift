@@ -40,6 +40,12 @@ struct TransactionModel: Identifiable, Decodable, Hashable {
     var month: String {
         dateParsed.formatted(.dateTime.year().month(.wide))
     }
+    var categoryItem: Category {
+        if let category = Category.all.first(where: { $0.id == categoryId }) {
+            return category
+        }
+        return .shopping
+    }
 }
 
 enum TransactionType: String {
@@ -47,11 +53,15 @@ enum TransactionType: String {
     case credit
 }
 
-struct Category {
+struct Category: Identifiable {
     let id: Int
     let name: String
     let icon: FontAwesomeCode
     var mainCategoryId: Int?
+    
+    var subcategories: [Category]? {
+        Category.subCategories.filter { $0.mainCategoryId == id } 
+    }
 }
 
 extension Category {

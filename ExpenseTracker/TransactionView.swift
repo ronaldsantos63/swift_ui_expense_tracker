@@ -41,9 +41,9 @@ struct TransactionView: View {
             
             // MARK: Category
             NavigationLink {
-                //
+                CategoriesView(transaction: transaction)
             } label: {
-                TransactionDetailRow(icon: .list, title: "Category", text: transaction.category)
+                TransactionDetailRow(icon: .list, title: "Category", text: transaction.categoryItem.name)
             }
 
         }
