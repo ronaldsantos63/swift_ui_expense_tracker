@@ -14,7 +14,7 @@ struct RecentTransactionList: View {
         VStack {
             HStack {
                 // MARK: Header Title
-                Text("Recent Transactions")
+                Text("Transações recentes")
                     .bold()
                 
                 Spacer()
@@ -24,7 +24,7 @@ struct RecentTransactionList: View {
                     TransactionList()
                 } label: {
                     HStack(spacing: 4) {
-                        Text("See All")
+                        Text("Ver todas")
                         Image(systemName: "chevron.right")
                     }
                     .foregroundColor(Color.text)
@@ -34,7 +34,11 @@ struct RecentTransactionList: View {
             
             // MARK: Recent Transaction List
             ForEach(Array(transactionListVM.transactions.prefix(5).enumerated()), id: \.element) { index, transaction in
-                TransactionRow(transactionModel: transaction)
+                NavigationLink {
+                    TransactionView(transaction: transaction)
+                } label: {
+                    TransactionRow(transactionModel: transaction)
+                }
                 
                 Divider()
                     .opacity(index == 4 ? 0 : 1)
@@ -55,9 +59,13 @@ struct RecentTransactionList_Previews: PreviewProvider {
     }()
     static var previews: some View {
         Group {
-            RecentTransactionList()
-            RecentTransactionList()
-                .preferredColorScheme(.dark)
+            NavigationView {
+                RecentTransactionList()
+            }
+            NavigationView  {
+                RecentTransactionList()
+                    .preferredColorScheme(.dark)
+            }
         }
         .environmentObject(transactionListVM)
     }
